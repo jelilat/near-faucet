@@ -6,6 +6,8 @@ global.Buffer = global.Buffer || require('buffer').Buffer
 function App() {
   const { connect, keyStores, WalletConnection, KeyPair } = nearAPI;
   const [userAccountId, setAccountId] = useState()
+  const [success, setSuccess] = useState(false)
+  const [transactionHash, setTransactionHash] = useState()
 
   const accountValidity = async (near) => {
       await near.connection.provider.query({
@@ -41,7 +43,13 @@ function App() {
       await keyStore.setKey("testnet", devAccountId, keyPair);
 
       const account = await near.account(devAccountId);
-      await account.deleteAccount(userAccountId); 
+      await account.deleteAccount(userAccountId)
+      .then((response) => {
+        console.log(response.transaction.hash);
+        const hash = response.transaction.hash;
+        setTransactionHash(`https://explorer.testnet.near.org/transactions/${hash}`)
+        setSuccess(true)
+      })
       window.localStorage.setItem("lastRequestTime", Date.now());
     } else {
       alert("Please wait 3 days before requesting new testnet tokens")
@@ -65,7 +73,11 @@ function App() {
         <p>You can request ~200 NEAR every 3 days.</p>
         <p><b>It worked! How can I say thank you?</b></p>
         <p>Follow me on twitter <a href="http://twitter.com/tjelailah">@tjelailah</a> and help other Developers by sharing your experience with a <a href="https://ctt.ac/fc1B7" target="_blank">tweet</a>.</p>
-      </div>
+      </div><br />
+      {success && 
+        <div className="success">
+          Tokens sent successfully! View on <a href={transactionHash} target="_blank">explorer</a>
+        </div>}
       <div className="footer">
         <p>Create with ❤️ by <a href="https://twitter.com/tjelailah" target="_blank">@tjelailah</a></p>
         <p><a href="https://github.com/jelilat/near-faucet" target="_blank">Github</a></p>

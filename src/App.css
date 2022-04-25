@@ -35,6 +35,16 @@
   padding: 20px 30px;
 }
 
+.success {
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgb(211, 252, 237);
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
 .footer {
   text-align: center;
   margin-top: 100px;
