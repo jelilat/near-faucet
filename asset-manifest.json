@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/near-faucet/static/css/main.47bdf865.css",
-    "main.js": "/near-faucet/static/js/main.0a2c4f0b.js",
+    "main.css": "/near-faucet/static/css/main.54864d93.css",
+    "main.js": "/near-faucet/static/js/main.85016580.js",
     "static/js/787.98caf698.chunk.js": "/near-faucet/static/js/787.98caf698.chunk.js",
-    "static/media/logo.svg": "/near-faucet/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/near-faucet/index.html",
-    "main.47bdf865.css.map": "/near-faucet/static/css/main.47bdf865.css.map",
-    "main.0a2c4f0b.js.map": "/near-faucet/static/js/main.0a2c4f0b.js.map",
+    "main.54864d93.css.map": "/near-faucet/static/css/main.54864d93.css.map",
+    "main.85016580.js.map": "/near-faucet/static/js/main.85016580.js.map",
     "787.98caf698.chunk.js.map": "/near-faucet/static/js/787.98caf698.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47bdf865.css",
-    "static/js/main.0a2c4f0b.js"
+    "static/css/main.54864d93.css",
+    "static/js/main.85016580.js"
   ]
 }
