@@ -49,3 +49,13 @@
   text-align: center;
   margin-top: 100px;
 }
+
+@media screen and (max-width: 767px) {
+  .suceess {
+    width: 300px;
+  }
+
+  .faqs {
+    width: 300px;
+  }
+}
