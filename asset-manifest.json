@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/near-faucet/static/css/main.e7153005.css",
-    "main.js": "/near-faucet/static/js/main.b1010d55.js",
+    "main.js": "/near-faucet/static/js/main.8944a656.js",
     "static/js/787.98caf698.chunk.js": "/near-faucet/static/js/787.98caf698.chunk.js",
     "index.html": "/near-faucet/index.html",
     "main.e7153005.css.map": "/near-faucet/static/css/main.e7153005.css.map",
-    "main.b1010d55.js.map": "/near-faucet/static/js/main.b1010d55.js.map",
+    "main.8944a656.js.map": "/near-faucet/static/js/main.8944a656.js.map",
     "787.98caf698.chunk.js.map": "/near-faucet/static/js/787.98caf698.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7153005.css",
-    "static/js/main.b1010d55.js"
+    "static/js/main.8944a656.js"
   ]
 }
