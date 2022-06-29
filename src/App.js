@@ -1,6 +1,7 @@
 import './App.css';
 import * as nearAPI from "near-api-js";
 import { useState } from "react"
+import Head from "next/head"
 global.Buffer = global.Buffer || require('buffer').Buffer
 
 function App() {
@@ -57,6 +58,16 @@ function App() {
   }
   return (
     <div>
+      <Head>
+        <meta name="keywords" content="near-faucet near-testnet-faucet near-dapp near near-protocol" />
+        <meta property="og:title" content="NEAR Testnet Faucet" />
+        <meta property="og:description" content="NEAR Testnet Faucet for Developers building on the NEAR protocol." />
+        <meta property="og:image" content="./logo-black.svg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="./logo-black.svg" />
+        <meta name="twitter:site" content="@tjelailah" />
+        <meta name="twitter:creator" content="@tjelailah" />
+      </Head>
       <h1 style={{textAlign: 'center'}}>NEAR Testnet Faucet</h1>
       <p style={{textAlign: 'center'}}>Fast and reliable. 200 NEAR every 3 days.</p>
       <div className="form">

@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "create-near-app": "^2.0.1",
     "near-cli": "^3.2.0",
+    "next": "^12.1.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
