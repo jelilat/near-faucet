@@ -74,7 +74,7 @@ function App() {
         </div><br />
       {success && 
         <div className="success">
-          Tokens sent successfully! View on <a href={transactionHash} target="_blank">explorer</a>
+          Tokens sent successfully! View on <a href={transactionHash} target="_blank" rel="noreferrer">explorer</a>
         </div>}
       <div className="footer">
         <p><a href="https://github.com/jelilat/near-faucet" target="_blank" rel="noreferrer">Github</a></p>
