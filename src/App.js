@@ -77,7 +77,7 @@ function App() {
           Tokens sent successfully! View on <a href={transactionHash} target="_blank">explorer</a>
         </div>}
       <div className="footer">
-        <p><a href="https://github.com/jelilat/near-faucet" target="_blank">Github</a></p>
+        <p><a href="https://github.com/jelilat/near-faucet" target="_blank" rel="noreferrer">Github</a></p>
       </div>
     </div>
   );
