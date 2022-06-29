@@ -71,16 +71,13 @@ function App() {
         <p>To request funds, simply enter your testnet wallet id and hit “Send Me NEAR".</p>
         <p><b>How does it work?</b></p>
         <p>You can request ~200 NEAR every 3 days.</p>
-        <p><b>It worked! How can I say thank you?</b></p>
-        <p>Follow me on twitter <a href="http://twitter.com/tjelailah">@tjelailah</a> and help other Developers by sharing your experience with a <a href="https://ctt.ac/fc1B7" target="_blank">tweet</a>.</p>
-      </div><br />
+        </div><br />
       {success && 
         <div className="success">
-          Tokens sent successfully! View on <a href={transactionHash} target="_blank">explorer</a>
+          Tokens sent successfully! View on <a href={transactionHash} target="_blank" rel="noreferrer">explorer</a>
         </div>}
       <div className="footer">
-        <p>Create with ❤️ by <a href="https://twitter.com/tjelailah" target="_blank">@tjelailah</a></p>
-        <p><a href="https://github.com/jelilat/near-faucet" target="_blank">Github</a></p>
+        <p><a href="https://github.com/jelilat/near-faucet" target="_blank" rel="noreferrer">Github</a></p>
       </div>
     </div>
   );
